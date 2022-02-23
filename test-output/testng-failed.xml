@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [RegressionSuite]">
+  <parameter name="platformVersion" value="10.0"/>
+  <parameter name="browserName" value="Chrome"/>
+  <parameter name="deviceOrientation" value="portrait"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="deviceName" value="Galaxy S10"/>
+  <test name="iPhoneSafariTest(failed)">
+    <parameter name="platformVersion" value="12.1"/>
+    <parameter name="browserName" value="Safari"/>
+    <parameter name="deviceOrientation" value="portrait"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="deviceName" value="iPhone XR"/>
+    <classes>
+      <class name="org.quote.mobileMDATests.CarInsuranceCompanies">
+        <methods>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="validate_SiteURLs"/>
+        </methods>
+      </class> <!-- org.quote.mobileMDATests.CarInsuranceCompanies -->
+    </classes>
+  </test> <!-- iPhoneSafariTest(failed) -->
+  <test name="androidChromeTest(failed)">
+    <parameter name="platformVersion" value="10.0"/>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="deviceOrientation" value="portrait"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="Galaxy S10"/>
+    <classes>
+      <class name="org.quote.mobileMDATests.CarInsuranceCompanies">
+        <methods>
+          <include name="close"/>
+          <include name="close"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="validate_SiteURLs"/>
+        </methods>
+      </class> <!-- org.quote.mobileMDATests.CarInsuranceCompanies -->
+    </classes>
+  </test> <!-- androidChromeTest(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

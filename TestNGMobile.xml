@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegressionSuite">
+
+
+	<test name="iPhoneSafariTest">
+		<parameter name="browserName" value="Safari" />
+		<parameter name="deviceName" value="iPhone XR" />
+		<parameter name="platformVersion" value="12.1" />
+		<parameter name="platformName" value="iOS" />
+		<parameter name="deviceOrientation" value="portrait" />
+		<classes>
+		<class name="org.quote.mobileMDATests.CarInsuranceCompanies" />
+			<!-- <class name="org.quote.mobileMDATests.QuoteInspector" /> -->
+			<!-- <class name="org.quote.mobileMDATests.AutoinsureSavings" /> -->
+			<!-- <class name="org.quote.mobileMDATests.BuyAutoInsurance" />
+			<class name="org.quote.mobileMDATests.AutoInsurance" />
+			<class name="org.quote.mobileMDATests.EffortlessInsurance" />
+			<class name="org.quote.mobileMDATests.CarInsuranceComparison" />
+			<class name="org.quote.mobileMDATests.AutoInsuranceez" />
+			<class name="org.quote.mobileMDATests.F4AutoInsuranceQuote" /> -->
+		</classes>
+	</test>
+	<test name="androidChromeTest">
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="deviceName" value="Galaxy S10" />
+		<parameter name="platformVersion" value="10.0" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="deviceOrientation" value="portrait" />
+		<classes>
+		<class name="org.quote.mobileMDATests.CarInsuranceCompanies" />
+		<!-- <class name="org.quote.mobileMDATests.AutoinsureSavings" /> -->
+			<!-- <class name="org.quote.mobileMDATests.QuoteInspector" /> -->
+			<!-- <class name="org.quote.mobileMDATests.AutoInsurance" /> -->
+			<!--<class name="org.quote.mobileMDATests.BuyAutoInsurance" /> <class 
+				name="org.quote.mobileMDATests.EffortlessInsurance" /> <class name="org.quote.mobileMDATests.CarInsuranceComparison" 
+				/> <class name="org.quote.mobileMDATests.AutoInsuranceez" /> <class name="org.quote.mobileMDATests.F4AutoInsuranceQuote" 
+				/> -->
+		</classes>
+	</test>
+</suite>

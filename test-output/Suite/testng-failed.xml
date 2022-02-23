@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="os" value="Mac10.14"/>
+  <parameter name="browser" value="safari"/>
+  <parameter name="name" value="Run iPhone"/>
+  <parameter name="browserName" value="Safari"/>
+  <parameter name="platformName" value="iOS"/>
+  <parameter name="deviceName" value="iPhone 12 Pro Max"/>
+  <test name="WinChromeTest(failed)">
+    <parameter name="os" value="Win10"/>
+    <parameter name="browser" value="Chrome76"/>
+    <classes>
+      <class name="org.quote.mdaTests.AI_CheckMDAs">
+        <methods>
+          <include name="validate_SiteURLs"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.quote.mdaTests.AI_CheckMDAs -->
+    </classes>
+  </test> <!-- WinChromeTest(failed) -->
+  <test name="WinFirefoxTest(failed)">
+    <parameter name="os" value="Win10"/>
+    <parameter name="browser" value="Chrome76"/>
+    <classes>
+      <class name="org.quote.mdaTests.AI_CheckMDAs">
+        <methods>
+          <include name="validate_SiteURLs"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.quote.mdaTests.AI_CheckMDAs -->
+    </classes>
+  </test> <!-- WinFirefoxTest(failed) -->
+  <test name="MacChromeTest(failed)">
+    <parameter name="os" value="Mac10.14"/>
+    <parameter name="browser" value="Chrome76"/>
+    <classes>
+      <class name="org.quote.mdaTests.AI_CheckMDAs">
+        <methods>
+          <include name="validate_SiteURLs"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.quote.mdaTests.AI_CheckMDAs -->
+    </classes>
+  </test> <!-- MacChromeTest(failed) -->
+  <test name="MacSafariTest(failed)">
+    <parameter name="os" value="Mac10.14"/>
+    <parameter name="browser" value="safari"/>
+    <classes>
+      <class name="org.quote.mdaTests.AI_CheckMDAs">
+        <methods>
+          <include name="validate_SiteURLs"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.quote.mdaTests.AI_CheckMDAs -->
+    </classes>
+  </test> <!-- MacSafariTest(failed) -->
+  <test name="iPhoneSafariTest(failed)">
+    <parameter name="name" value="Run iPhone"/>
+    <parameter name="browserName" value="Safari"/>
+    <parameter name="platformName" value="iOS"/>
+    <parameter name="deviceName" value="iPhone 12 Pro Max"/>
+    <classes>
+      <class name="org.quote.mdaTests.AI_CheckMDAs">
+        <methods>
+          <include name="validate_SiteURLs"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.quote.mdaTests.AI_CheckMDAs -->
+    </classes>
+  </test> <!-- iPhoneSafariTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

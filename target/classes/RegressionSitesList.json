@@ -1,0 +1,94 @@
+[
+	{
+		"site": {
+			"MDAConfig": "buyautoinsurance.xlsx",
+			"URLs": [
+				"https://www.buyautoinsurance.com/cars/gmc/",
+				"https://www.buyautoinsurance.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "effortlessinsurance.xlsx",
+			"URLs": [
+				"https://www.effortlessinsurance.com/life-insurance-40-year-old/",
+				"https://www.effortlessinsurance.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "autoinsuranceez.xlsx",
+			"URLs": [
+				"https://www.autoinsuranceez.com/",
+				"https://www.autoinsuranceez.com/auto-insurance-rates/",
+				"https://www.autoinsuranceez.com/homeowners-insurance-101/",
+				"https://www.autoinsuranceez.com/compare-auto-insurance/deerbrook-insurance-review/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "4autoinsurancequote.xlsx",
+			"URLs": [
+				"https://www.4autoinsurancequote.com/",
+				"https://www.4autoinsurancequote.com/companies/progressive-auto-insurance-review/",
+				"https://www.4autoinsurancequote.com/how-to-compare-auto-insurance-quotes/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "autoinsurance.xlsx",
+			"URLs": [
+				"https://www.autoinsurance.org/best-companies/",
+				"https://www.autoinsurance.org/companies/infinity-auto-insurance-review/",
+				"https://www.autoinsurance.org/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "carinsurancecomparison.xlsx",
+			"URLs": [
+				"https://www.carinsurancecomparison.com/companies/erie-car-insurance-review/",
+				"https://www.carinsurancecomparison.com/",
+				"https://www.carinsurancecomparison.com/how-much-are-pickup-truck-car-insurance-rates/",
+				"https://www.carinsurancecomparison.com/liability-auto-insurance-coverage/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "quoteinspector.xlsx",
+			"URLs": [
+				"https://www.quoteinspector.com/which-cars-are-cheapest-to-insure/",
+				"https://www.quoteinspector.com/california-car-insurance/",
+				"https://www.quoteinspector.com/insurance/vehicles/ford/escape/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "autoinsuresavings.xlsx",
+			"URLs": [
+				"https://www.autoinsuresavings.org/",
+				"https://www.autoinsuresavings.org/review-21st-century-auto-insurance-drivers/",
+				"https://www.autoinsuresavings.org/cheap-automobile-insurance/",
+				"https://www.autoinsuresavings.org/erie-auto-insurance/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "carinsurancecompanies.xlsx",
+			"URLs": [
+				"https://www.carinsurancecompanies.com/",
+				"https://www.carinsurancecompanies.com/car-insurance-quotes/",
+				"https://www.autoinsuresavings.org/hartford-car-insurance-prices-state-comparison/",
+				"https://www.carinsurancecompanies.com/car-insurance-companies/"
+			]
+		}
+	}
+]

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegressionSuite">
+	<test name="WinChromeTest">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="version" value="96" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<class name="org.quote.mdaTests.CarInsuranceComparison" />
+		</classes>
+	</test>
+	<test name="WinFirefoxTest">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="Firefox" />
+		<parameter name="version" value="93" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<class name="org.quote.mdaTests.CarInsuranceComparison" />
+		</classes>
+	</test>
+	<test name="MacChromeTest">
+		<parameter name="platform" value="Mac OSX 10.15" />
+		<parameter name="browserName" value="Safari" />
+		<parameter name="version" value="13" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<class name="org.quote.mdaTests.CarInsuranceComparison" />
+		</classes>
+	</test>
+	<test name="MacSafariTest">
+		<parameter name="platform" value="Mac OSX 10.14" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="version" value="87" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<class name="org.quote.mdaTests.CarInsuranceComparison" />
+		</classes>
+	</test>
+	<!-- <test name="iPhoneSafariTest"> <parameter name="name" value="Run iPhone" 
+		/> <parameter name="browserName" value="Safari" /> <parameter name="deviceName" 
+		value="iPhone X Simulator" /> <parameter name="platformName" value="iOS" 
+		/> <classes> <class name="org.quote.mdaTests.CarInsuranceComparison" /> </classes> 
+		</test> -->
+</suite>

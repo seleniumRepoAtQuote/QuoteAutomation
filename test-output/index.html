@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-RegressionSuite" class="navigator-link">
+              <span class="suite-name border-failed">RegressionSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-RegressionSuite" class="navigator-link ">
+                    <span>C:\Tayu\Code\Java_Workspace\MdaChecker\TestNGMobile.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-RegressionSuite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-RegressionSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-RegressionSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-RegressionSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-RegressionSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-RegressionSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.quote.mobileMDATests.CarInsuranceCompanies" class="method navigator-link" hash-for-method="validate_SiteURLs">validate_SiteURLs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-RegressionSuite" title="org.quote.mobileMDATests.CarInsuranceCompanies" class="method navigator-link" hash-for-method="validate_SiteURLs">validate_SiteURLs</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.quote.mobileMDATests.CarInsuranceCompanies</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_SiteURLs">
+                  </a> <!-- validate_SiteURLs -->
+                  <span class="method-name">validate_SiteURLs</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: WebDriverException occured : 
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {additionalWebviewBundleIds: [com.apple.mobilesafari], autoAcceptAlerts: true, autoWebview: true, automationName: XCUITest, browserName: Safari, databaseEnabled: false, derivedDataPath: /opt/cbt/wda_builds/appium_..., deviceName: iPhone, includeSafariInWebviews: true, javascriptEnabled: true, locationContextEnabled: false, maxInstances: 1, nativeWebTap: true, networkConnectionEnabled: false, newCommandTimeout: 600, orientation: PORTRAIT, platform: IOS, platformName: iOS, platformVersion: 12, safariAllowPopups: true, safariIgnoreFraudWarning: true, safariLogAllCommunication: true, safariOpenLinksInBackground: true, showXcodeLog: true, startIWDP: true, takesScreenshot: true, udid: 00008020-00144D523AF2002E, usePrebuiltWDA: true, version: 12.1, waitForQuiescence: true, wdaLocalPort: 21639, webStorageEnabled: false, webkitDebugProxyPort: 14639, xcodeConfigFile: /opt/cbt/appium/LaunchOptio...}
+Session ID: 7d6170c3-b9b2-4326-bb71-96590476ae37
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
+	... 24 more
+... Removed 30 stack frames<br/> java.lang.AssertionError: WebDriverException occured : 
+	at org.testng.Assert.fail(Assert.java:83)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {additionalWebviewBundleIds: [com.apple.mobilesafari], autoAcceptAlerts: true, autoWebview: true, automationName: XCUITest, browserName: Safari, databaseEnabled: false, derivedDataPath: /opt/cbt/wda_builds/appium_..., deviceName: iPhone, includeSafariInWebviews: true, javascriptEnabled: true, locationContextEnabled: false, maxInstances: 1, nativeWebTap: true, networkConnectionEnabled: false, newCommandTimeout: 600, orientation: PORTRAIT, platform: IOS, platformName: iOS, platformVersion: 12, safariAllowPopups: true, safariIgnoreFraudWarning: true, safariLogAllCommunication: true, safariOpenLinksInBackground: true, showXcodeLog: true, startIWDP: true, takesScreenshot: true, udid: 00008020-00144D523AF2002E, usePrebuiltWDA: true, version: 12.1, waitForQuiescence: true, wdaLocalPort: 21639, webStorageEnabled: false, webkitDebugProxyPort: 14639, xcodeConfigFile: /opt/cbt/appium/LaunchOptio...}
+Session ID: 7d6170c3-b9b2-4326-bb71-96590476ae37
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
+	... 24 more
+"</b><br>org.testng.Assert.fail(Assert.java:83)<br>org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:567)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validate_SiteURLs">
+                  </a> <!-- validate_SiteURLs -->
+                  <span class="method-name">validate_SiteURLs</span>
+                  <div class="stack-trace"><b>"java.lang.AssertionError: WebDriverException occured : 
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.99) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Galaxy S10, newCommandTimeout: 600, orientation: PORTRAIT, platformName: Android, platformVersion: 10.0, udid: RF8MC0VLHBP}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-G9730, deviceName: RF8MC0VLHBP, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RF8MC0VLHBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 112, takesScreenshot: true, udid: RF8MC0VLHBP, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 965befd7-667c-466b-9102-afe49cdc0e9b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
+	... 24 more
+... Removed 30 stack frames<br/> java.lang.AssertionError: WebDriverException occured : 
+	at org.testng.Assert.fail(Assert.java:83)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.99) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Galaxy S10, newCommandTimeout: 600, orientation: PORTRAIT, platformName: Android, platformVersion: 10.0, udid: RF8MC0VLHBP}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-G9730, deviceName: RF8MC0VLHBP, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RF8MC0VLHBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 112, takesScreenshot: true, udid: RF8MC0VLHBP, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 965befd7-667c-466b-9102-afe49cdc0e9b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
+	... 24 more
+"</b><br>org.testng.Assert.fail(Assert.java:83)<br>org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br>java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)<br>java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br>java.base/java.lang.reflect.Method.invoke(Method.java:567)<br>org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)<br>org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br>org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br>org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br>org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br>org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br>org.testng.TestRunner.privateRun(TestRunner.java:767)<br>org.testng.TestRunner.run(TestRunner.java:617)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br>org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br>org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Tayu\Code\Java_Workspace\MdaChecker\TestNGMobile.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;RegressionSuite&quot;&gt;
+  &lt;test name=&quot;iPhoneSafariTest&quot;&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;12.1&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Safari&quot;/&gt;
+    &lt;parameter name=&quot;deviceOrientation&quot; value=&quot;portrait&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;iOS&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;iPhone XR&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.quote.mobileMDATests.CarInsuranceCompanies&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- iPhoneSafariTest --&gt;
+  &lt;test name=&quot;androidChromeTest&quot;&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;10.0&quot;/&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;Chrome&quot;/&gt;
+    &lt;parameter name=&quot;deviceOrientation&quot; value=&quot;portrait&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;Galaxy S10&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.quote.mobileMDATests.CarInsuranceCompanies&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- androidChromeTest --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">iPhoneSafariTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">androidChromeTest (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'validate_SiteURLs')
+data.setCell(0, 2, 'org.quote.mobileMDATests.CarInsuranceCompanies')
+data.setCell(0, 3, 113986);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validate_SiteURLs')
+data.setCell(1, 2, 'org.quote.mobileMDATests.CarInsuranceCompanies')
+data.setCell(1, 3, 68438);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.quote.mobileMDATests.CarInsuranceCompanies</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(Safari, iPhone XR, 12.1, iOS, portrait, org.testng.TestRunner@7dd611c8)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_SiteURLs</span>
+                <span class="method-start">32050 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">146038 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(Chrome, Galaxy S10, 10.0, Android, portrait, org.testng.TestRunner@278667fd)</span>
+                <span class="method-start">146071 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validate_SiteURLs</span>
+                <span class="method-start">163996 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">close</span>
+                <span class="method-start">232439 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  androidChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>androidChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 21 22:03:09 EST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>86 seconds (86369 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs()'><b>validate_SiteURLs</b><br>Test class: org.quote.mobileMDATests.CarInsuranceCompanies</td>
+<td><div><pre>java.lang.AssertionError: WebDriverException occured : 
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.99) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Galaxy S10, newCommandTimeout: 600, orientation: PORTRAIT, platformName: Android, platformVersion: 10.0, udid: RF8MC0VLHBP}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-G9730, deviceName: RF8MC0VLHBP, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RF8MC0VLHBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 112, takesScreenshot: true, udid: RF8MC0VLHBP, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 965befd7-667c-466b-9102-afe49cdc0e9b
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
+	... 24 more
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace523331047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace523331047'><pre>java.lang.AssertionError: WebDriverException occured : 
+	at org.testng.Assert.fail(Assert.java:83)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=80.0.3987.99) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Galaxy S10, newCommandTimeout: 600, orientation: PORTRAIT, platformName: Android, platformVersion: 10.0, udid: RF8MC0VLHBP}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-G9730, deviceName: RF8MC0VLHBP, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RF8MC0VLHBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 112, takesScreenshot: true, udid: RF8MC0VLHBP, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 965befd7-667c-466b-9102-afe49cdc0e9b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
+	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
+	... 24 more
+</pre></div></td>
+<td>68</td>
+<td>org.quote.mobileMDATests.CarInsuranceCompanies@47d90b9e</td></tr>
+</table><p>
+</body>
+</html>
