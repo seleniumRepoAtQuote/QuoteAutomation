@@ -31,99 +31,22 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">iPhoneSafariTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">146.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">androidChromeTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">86.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">MacSafariTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">MacChromeTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">WinChromeTest</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">706.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">WinFireFoxTest</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">232.4 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">706.9 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">iPhoneSafariTest &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">org.quote.mobileMDATests.CarInsuranceCompanies</td><td><a href="#m1"><b>validate_SiteURLs</b>  </a></td><td class="numi">1</td><td>1645498875739</td><td class="numi">113986</td></tr>
-<tr><th colspan="4">androidChromeTest &#8212; failed</th></tr>
-<tr class="failedodd"><td rowspan="1">org.quote.mobileMDATests.CarInsuranceCompanies</td><td><a href="#m2"><b>validate_SiteURLs</b>  </a></td><td class="numi">1</td><td>1645499007685</td><td class="numi">68438</td></tr>
+<tr><th colspan="4">WinChromeTest &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">com.quote.dropDown.deskTopMDATests.InsuranceProviders</td><td><a href="#m1"><b>validate_SiteURLs</b>  </a></td><td class="numi">1</td><td>1648838861592</td><td class="numi">696885</td></tr>
 </table>
-<h1>iPhoneSafariTest</h1>
-<h2 id="m1">org.quote.mobileMDATests.CarInsuranceCompanies:validate_SiteURLs</h2>
-<div style="padding-left:3em">
-<p>WebDriverException occured : </p>
-org.testng.Assert.fail(Assert.java:83)
-<br/>at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
-<br/>25 lines not shown
-<p>Caused by Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {additionalWebviewBundleIds: [com.apple.mobilesafari], autoAcceptAlerts: true, autoWebview: true, automationName: XCUITest, browserName: Safari, databaseEnabled: false, derivedDataPath: /opt/cbt/wda_builds/appium_..., deviceName: iPhone, includeSafariInWebviews: true, javascriptEnabled: true, locationContextEnabled: false, maxInstances: 1, nativeWebTap: true, networkConnectionEnabled: false, newCommandTimeout: 600, orientation: PORTRAIT, platform: IOS, platformName: iOS, platformVersion: 12, safariAllowPopups: true, safariIgnoreFraudWarning: true, safariLogAllCommunication: true, safariOpenLinksInBackground: true, showXcodeLog: true, startIWDP: true, takesScreenshot: true, udid: 00008020-00144D523AF2002E, usePrebuiltWDA: true, version: 12.1, waitForQuiescence: true, wdaLocalPort: 21639, webStorageEnabled: false, webkitDebugProxyPort: 14639, xcodeConfigFile: /opt/cbt/appium/LaunchOptio...}
-Session ID: 7d6170c3-b9b2-4326-bb71-96590476ae37</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-<br/>at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-<br/>at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-<br/>at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-<br/>at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-<br/>at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
-<br/>at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
-<br/>at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
-<br/>25 lines not shown
-</div>
+<h1>MacSafariTest</h1>
+<h1>MacChromeTest</h1>
+<h1>WinChromeTest</h1>
+<h2 id="m1">com.quote.dropDown.deskTopMDATests.InsuranceProviders:validate_SiteURLs</h2>
 <p class="totop"><a href="#summary">back to summary</a></p>
-<h1>androidChromeTest</h1>
-<h2 id="m2">org.quote.mobileMDATests.CarInsuranceCompanies:validate_SiteURLs</h2>
-<div style="padding-left:3em">
-<p>WebDriverException occured : </p>
-org.testng.Assert.fail(Assert.java:83)
-<br/>at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
-<br/>25 lines not shown
-<p>Caused by element not interactable
-  (Session info: chrome=80.0.3987.99) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-6DRS0JN&apos;, ip: &apos;10.168.10.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Galaxy S10, newCommandTimeout: 600, orientation: PORTRAIT, platformName: Android, platformVersion: 10.0, udid: RF8MC0VLHBP}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-G9730, deviceName: RF8MC0VLHBP, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RF8MC0VLHBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 112, takesScreenshot: true, udid: RF8MC0VLHBP, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 965befd7-667c-466b-9102-afe49cdc0e9b</p>
-java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-<br/>at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-<br/>at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-<br/>at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-<br/>at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-<br/>at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-<br/>at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-<br/>at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-<br/>at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-<br/>at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-<br/>at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-<br/>at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-<br/>at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-<br/>at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-<br/>at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-<br/>at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
-<br/>at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
-<br/>at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
-<br/>25 lines not shown
-</div>
-<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>WinFireFoxTest</h1>
 </body></html>

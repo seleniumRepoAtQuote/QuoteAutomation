@@ -47,8 +47,9 @@ public class SeleniumSetUpFunctions {
 		SeleniumSetUpFunctions.testScore = testScore;
 	}
 
-	public static AppiumDriver<AndroidElement> initializeRemoteEnv(String browserName, String deviceName, String platformVersion,
-			String platformName, String deviceOrientation, ITestContext ctx) throws IOException {
+	public static AppiumDriver<AndroidElement> initializeRemoteEnv(String browserName, String deviceName,
+			String platformVersion, String platformName, String deviceOrientation, ITestContext ctx)
+			throws IOException {
 
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setCapability("name", ctx.getCurrentXmlTest().getName());
@@ -67,6 +68,7 @@ public class SeleniumSetUpFunctions {
 			caps.setCapability("safariIgnoreFraudWarning", true);
 			caps.setCapability("safariOpenLinksInBackground", true);
 			caps.setCapability("nativeWebTap", true);
+			caps.setCapability("appiumVersion", "1.22.2");
 			driver = new IOSDriver<AndroidElement>(url, caps);
 		} else {
 			driver = new AndroidDriver<AndroidElement>(url, caps);
@@ -94,7 +96,8 @@ public class SeleniumSetUpFunctions {
 		caps.setCapability("platformName", platformName);
 		caps.setCapability("deviceOrientation", deviceOrientation);
 		caps.setCapability("record_video", "true");
-
+		//caps.setCapability("nativeEvents", "true");
+		
 		URL url = new URL("https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub");
 
 		if (platformName.equalsIgnoreCase("iOs")) {

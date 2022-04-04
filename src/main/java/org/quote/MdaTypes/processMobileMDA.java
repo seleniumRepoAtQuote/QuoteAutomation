@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.quote.DataTypes.MDAConfig;
 import org.quote.abstractWebSection.AbstractComponents;
@@ -564,4 +565,86 @@ public class processMobileMDA extends AbstractComponents {
 		System.out.println("processHeaderMDA Done ==>#############################");
 		return;
 	}
+
 }
+
+/*
+ * public void processMobileGrayMDA(MDAConfig mdaConfig, WebDriver driver,
+ * String dropDownOption) throws InterruptedException { String originalHandle =
+ * driver.getWindowHandle(); WebElement grayMDA = null;
+ * System.out.println(sectionElements.size()); int i; for (i =
+ * sectionElements.size() - 2; i > 1; i--) {
+ * 
+ * grayMDA = sectionElements.get(i); if (grayMDA.getAttribute("class").
+ * equalsIgnoreCase("alt-responsive-mda mda alt-shortcode")) {
+ * System.out.println(grayMDA.getAttribute("class") + " Class");
+ * ((JavascriptExecutor)
+ * driver).executeScript("arguments[0].scrollIntoView(true);", grayMDA);
+ * Thread.sleep(800); break; } } if (grayMDA == null) { System.out.
+ * println("GrayMDA not present!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+ * return; } // ((JavascriptExecutor) //
+ * driver).executeScript("arguments[0].scrollIntoView(true);", grayMDA);
+ * 
+ * 
+ * WebElement h2 = grayMDA.findElement(By.tagName("h2"));
+ * System.out.println(h2.getText() + " h2 ");
+ * 
+ * 
+ * String zipTextMdaIDString = grayMDA.getAttribute("id");
+ * System.out.println("zipTextMdaIDString ==== " + zipTextMdaIDString);
+ * 
+ * ((JavascriptExecutor)
+ * driver).executeScript("arguments[0].scrollIntoView(true);", grayMDA);
+ * Thread.sleep(5000); WebElement p = grayMDA.findElement(By.tagName("p"));
+ * System.out.println(p.getText() + " <p> "); // *[@id=\"mdabottom\"] if
+ * (p.getText().equalsIgnoreCase(mdaConfig.getMdaText())) {
+ * System.out.println("<p> text matched"); Thread.sleep(5000);
+ * 
+ * i++; WebElement dropDownElement = grayMDA.findElement( By.
+ * xpath("//section[@class='alt-responsive-mda mda alt-shortcode']//select[@name='type']"
+ * )); // xpath("(//select[@name='type'])["+i+"]")); Select dropdown = new
+ * Select(dropDownElement); System.out.println("DDOption ==> " +
+ * dropDownOption); dropdown.selectByValue(dropDownOption);
+ * 
+ * WebElement zipWebElementB = grayMDA.findElement(By
+ * .xpath("//section[@class='alt-responsive-mda mda alt-shortcode']//input[@placeholder='ZIP Code']"
+ * )); // xpath("(//input[@placeholder='ZIP Code'])["+i+"]")); //
+ * name("zipcode"));//xpath("//*[@id=\""+zipTextMdaIDString+
+ * "\"]/div/section/div/form/div[1]/input"));// //
+ * xpath("//*[@id=\""+zipTextMdaIDString+"\"]/div/section/div/form/div[1]/input"
+ * ));//name("zipcode")); Thread.sleep(5000); //
+ * ("//div[1]/form[1]/div[1]/input[1]")); // WebElement zipWebElementB =
+ * bottomMDA.findElement(By.tagName("input"));
+ * zipWebElementB.sendKeys(mdaConfig.getZipCode().get(0));
+ * 
+ * // ((JavascriptExecutor) //
+ * driver).executeScript("arguments[0].scrollIntoView(true);", grayMDA);
+ * 
+ * // new WebDriverWait(driver, //
+ * 10).until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='
+ * Get // Quotes']"))).click(); // *[@id="mda_bc2cf8"]/div/p[1]/text()
+ * WebElement getQuoteButton = grayMDA.findElement( By.
+ * xpath("//section[@class='alt-responsive-mda mda alt-shortcode']//input[@class='mda-submit']"
+ * )); // className("mda-submit")); //
+ * xpath("//*[@id=\""+zipTextMdaIDString+"\"]/div/section/div/form/div[2]/input"
+ * )); Thread.sleep(5000); // ("//div[1]/form[1]/div[2]/input[1]"));
+ * getQuoteButton.click(); Thread.sleep(5000); ArrayList<String> tabs = new
+ * ArrayList<String>(driver.getWindowHandles()); // switch to new tab
+ * 
+ * driver.switchTo().window(tabs.get(0)); if
+ * (driver.getTitle().equalsIgnoreCase(mdaConfig.getPageTitleCurrentTab()))
+ * System.out.println("Page title of current tab: " + driver.getTitle() +
+ * " ----> Matched"); else System.out.println("Page title of current tab: " +
+ * driver.getTitle() + " ----> Did not match"); // switch to parent window
+ * driver.switchTo().window(tabs.get(1)); if
+ * (driver.getTitle().equalsIgnoreCase(mdaConfig.getPageTitlenewTab()))
+ * System.out.println("Page title of new tab: " + driver.getTitle() +
+ * " ----> Matched"); else System.out.println("Page title of new tab: " +
+ * driver.getTitle() + " ----> Did not match"); } else
+ * System.out.println("Titles not matched."); for (String handle :
+ * driver.getWindowHandles()) { if (!handle.equals(originalHandle)) {
+ * driver.switchTo().window(handle); driver.close(); } }
+ * 
+ * driver.switchTo().window(originalHandle); // driver.close();
+ * System.out.println("processGrayMDA Done ==>#############################"); }
+ */

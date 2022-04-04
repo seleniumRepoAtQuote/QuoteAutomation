@@ -38,6 +38,7 @@ public class AutoInsuranceez {
 	private ArrayList<String> urlStringList;
 	private static JsonSiteStructure jsonSiteObject;
 	private ProcessCBTMDA mDAs;
+	private String fileName_Excel = "autoinsuranceez.xlsx";
 
 	@BeforeClass
 	@org.testng.annotations.Parameters(value = { "browserName", "deviceName", "platformVersion", "platformName",
@@ -69,7 +70,7 @@ public class AutoInsuranceez {
 		try {
 			LoadDataFromExcel dataFromExcel = new LoadDataFromExcel();
 			HashMap<String, JsonSiteStructure> jsonSitesList = LoadJsonData.parseJson();
-			jsonSiteObject = jsonSitesList.get("autoinsuranceez.xlsx");
+			jsonSiteObject = jsonSitesList.get(fileName_Excel);
 			mdaConfig = dataFromExcel.populateMdaConfigs(jsonSiteObject.getConfig());
 			urlStringList = jsonSiteObject.getUrlsList();
 			for (String urlString : urlStringList) {
@@ -99,7 +100,7 @@ public class AutoInsuranceez {
 			SeleniumSetUpFunctions.closedriver();
 
 			Assert.fail("UnreachableBrowserException occured : ", e);
-		}catch (WebDriverException e) {
+		} catch (WebDriverException e) {
 			SeleniumSetUpFunctions.setScore(driver.getSessionId().toString(), "fail");
 			SeleniumSetUpFunctions.closedriver();
 
@@ -112,12 +113,12 @@ public class AutoInsuranceez {
 		System.out.println("validate_TopMDA" + urlString);
 		bit = TestUtilities.isHomePage(urlString);
 		driver.get(urlString);
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
 		if (bit) {
 			// mDAs.processHomePageTopMDA(mdaConfig, driver);
 		} else {
-			mDAs.processTopMDA(mdaConfig, driver);
+			mDAs.processMobileTopMDA(mdaConfig, driver);
 		}
 	}
 
@@ -126,7 +127,7 @@ public class AutoInsuranceez {
 		bit = TestUtilities.isHomePage(urlString);
 		driver.get(urlString);
 		Thread.sleep(5000);
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0,7000)");
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
 		ProcessMda.execute_partial_BottomMDA = true;
@@ -137,25 +138,25 @@ public class AutoInsuranceez {
 	public void validate_blueMDA(String urlString) throws InterruptedException {
 		System.out.println("validate_blueMDA" + urlString);
 		driver.get(urlString);
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processBlueMDA(mdaConfig, driver);
+		mDAs.processMobileBlueMDA(mdaConfig, driver);
 	}
 
 	public void validate_grayMDA(String urlString) throws InterruptedException {
 		System.out.println("validate_grayMDA" + urlString);
 		driver.get(urlString);
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processGrayMDA(mdaConfig, driver);
+		mDAs.processMobileGrayMDA(mdaConfig, driver);
 	}
 
 	public void validate_bottomMDA(String urlString) throws InterruptedException {
 		System.out.println("validate_bottomMDA" + urlString);
 		driver.get(urlString);
-		//driver.manage().window().maximize();
+		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processBottomMDA(mdaConfig, driver);
+		mDAs.processMobileBottomMDA(mdaConfig, driver);
 	}
 
 	@AfterClass

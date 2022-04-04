@@ -35,16 +35,17 @@ public class BSRemoteTest {
 		 * caps.setCapability("browser", "Chrome");
 		 * caps.setCapability("browser_version", "80"); caps.setCapability("name",
 		 * "My First Test"); caps.setCapability("build", "Build #1");
-		 * caps.setCapability("project", "Sample sandbox project");
 		 */
-
+		caps.setCapability("project", "Sample sandbox project");
 		caps.setCapability("os", "OS X");
 		caps.setCapability("os_version", "Big Sur");
 		caps.setCapability("browser", "Safari");
 		caps.setCapability("browser_version", "14.0");
 		caps.setCapability("name", "SAFARI mda checker");
-		caps.setCapability("browserstack.local", "false");
-		caps.setCapability("browserstack.selenium_version", "3.14.0");
+		/*
+		 * caps.setCapability("browserstack.local", "false");
+		 * caps.setCapability("browserstack.selenium_version", "3.14.0");
+		 */
 		caps.setCapability("project", "Sample OS_X sandbox project");
 
 		WebDriver driver = new RemoteWebDriver(new URL(URL), caps);

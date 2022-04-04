@@ -32,6 +32,7 @@ public class CarInsuranceComparison {
 	private ArrayList<String> urlStringList;
 	private static JsonSiteStructure jsonSiteObject;
 	private ProcessMda mDAs;
+	private String fileName_Excel = "carinsurancecomparison.xlsx";
 
 	@BeforeClass
 	@org.testng.annotations.Parameters(value = { "platform", "browserName", "version", "screenResolution" })
@@ -46,18 +47,19 @@ public class CarInsuranceComparison {
 		LoadDataFromExcel dataFromExcel = new LoadDataFromExcel();
 		try {
 			HashMap<String, JsonSiteStructure> jsonSitesList = LoadJsonData.parseJson();
-			jsonSiteObject = jsonSitesList.get("carinsurancecomparison.xlsx");
+			jsonSiteObject = jsonSitesList.get(fileName_Excel);
 			mdaConfig = dataFromExcel.populateMdaConfigs(jsonSiteObject.getConfig());
 			urlStringList = jsonSiteObject.getUrlsList();
 			for (String urlString : urlStringList) {
 				validate_headerMDAEnterButton(urlString);
 				validate_headerMDA(urlString);
 
-				/*
-				 * validate_TopMDA(urlString); validate_grayMDA(urlString);
-				 * validate_blueMDA(urlString); validate_bottomMDA(urlString);
-				 * SeleniumSetUpFunctions.setTestScore("pass");
-				 */
+				validate_TopMDA(urlString);
+				validate_grayMDA(urlString);
+				validate_blueMDA(urlString);
+				validate_bottomMDA(urlString);
+				//SeleniumSetUpFunctions.setTestScore("pass");
+
 			}
 			SeleniumSetUpFunctions.setScore(driver.getSessionId().toString(), "pass");
 			SeleniumSetUpFunctions.closedriver();

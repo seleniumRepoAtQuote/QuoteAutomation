@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegressionSuite">
+
+
+	<test name="iPhoneSafariTest">
+		<parameter name="browserName" value="Safari" />
+		<parameter name="deviceName" value="iPhone XR" />
+		<parameter name="platformVersion" value="12.1" />
+		<parameter name="platformName" value="iOS" />
+		<parameter name="deviceOrientation" value="portrait" />
+		<classes>
+			<!-- <class name="com.quote.dropDown.mobileMDATests.InsuranceProviders" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.ExpertInsuranceReviews" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.UsInsuranceAgents" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.TheTruthAboutInsurance" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.FreeAdvice" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.Quote" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.InsuranceBlogByChris" /> -->
+		</classes>
+	</test>
+	<test name="androidChromeTest">
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="deviceName" value="Pixel 4A" />
+		<parameter name="platformVersion" value="11.0" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="deviceOrientation" value="portrait" />
+		<classes>
+			<class name="com.quote.dropDown.mobileMDATests.InsuranceProviders" />
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.ExpertInsuranceReviews" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.UsInsuranceAgents" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.TheTruthAboutInsurance" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.FreeAdvice" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.Quote" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.InsuranceBlogByChris" /> -->
+		</classes>
+	</test>
+</suite>

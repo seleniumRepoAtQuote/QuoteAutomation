@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -12,12 +13,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.quote.DataTypes.JsonSiteStructure;
 import org.quote.DataTypes.MDAConfig;
 import org.quote.LoadData.LoadDataFromExcel;
 import org.quote.LoadData.LoadJsonData;
 import org.quote.MdaTypes.ProcessCBTMDA;
 import org.quote.MdaTypes.ProcessMda;
+import org.quote.MdaTypes.ProcessMobileDropDownMDA;
 import org.quote.MdaTypes.processMobileMDA;
 
 import com.mashape.unirest.http.HttpResponse;
@@ -29,6 +32,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.ios.IOSElement;
 
 public class SampleMobileTestRemote {
 	static String username = "info%40360quotellc.com"; // Your username
@@ -38,12 +42,13 @@ public class SampleMobileTestRemote {
 	private static JsonSiteStructure jsonSiteObject;
 	private static ArrayList<String> urlStringList;
 	private static MDAConfig mdaConfig;
-	private processMobileMDA mDAs;
+	private static ProcessMobileDropDownMDA mDAs1;
+	private static ProcessMobileDropDownMDA mDAs;
 
 	public static void main(String[] args) throws Exception {
 		SampleMobileTestRemote myTest = new SampleMobileTestRemote();
 
-		DesiredCapabilities caps = new DesiredCapabilities();
+		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		/*
 		 * caps.setCapability("name", "Check MDA on Android");
@@ -55,17 +60,24 @@ public class SampleMobileTestRemote {
 		 * caps.setCapability("record_video", "true");
 		 */
 
-		caps.setCapability("name", "Check MDA on iPhone");
-		caps.setCapability("build", "1.0");
-		caps.setCapability("browserName", "Safari");
-		caps.setCapability("deviceName", "iPhone 12 Pro Max");
-		caps.setCapability("platformVersion", "14.0");
-		caps.setCapability("platformName", "iOS");
-		caps.setCapability("deviceOrientation", "portrait");
-		caps.setCapability("record_video", "true");
+		capabilities.setCapability("name", "Check MDA on iPhone");
+		capabilities.setCapability("platformName", "iOS");
+		capabilities.setCapability("deviceName", "iPhone 12 Pro Max");
+		capabilities.setCapability("platformVersion", "14.0");
+		capabilities.setCapability("browserName", "Safari");
+		capabilities.setCapability("build", "First Test");
+		capabilities.setCapability("name", "Sample Test");
+		capabilities.setCapability("network", true); // To enable network logs
+		capabilities.setCapability("visual", true); // To enable step by step screenshot
+		capabilities.setCapability("video", true); // To enable video recording
+		capabilities.setCapability("console", true); // To capture console logs
+		capabilities.setCapability("autoAcceptAlerts", true);
+		capabilities.setCapability("safariAllowPopups", true);
+		capabilities.setCapability("safariIgnoreFraudWarning", true);
+		capabilities.setCapability("safariOpenLinksInBackground", true);
 
 		URL url = new URL("http://" + username + ":" + authkey + "@hub.crossbrowsertesting.com:80/wd/hub");
-		AppiumDriver<AndroidElement> driver = new IOSDriver<AndroidElement>(url, caps);// new
+		AppiumDriver<AndroidElement> driver = new IOSDriver<AndroidElement>(url, capabilities);// new
 																						// AndroidDriver<AndroidElement>(url,
 																						// caps);
 		// IOSDriver<AndroidElement> driver = new IOSDriver<AndroidElement>(url, caps);
@@ -76,26 +88,23 @@ public class SampleMobileTestRemote {
 		// we wrap the test in a try catch loop so we can log assert failures in our
 		// system
 		try {
-			// load the page url
-			System.out.println("Loading Url");
-			driver.get("http://crossbrowsertesting.github.io/selenium_example_page.html");
-
-			// Check the page title (try changing to make the assertion fail!)
-			System.out.println("Checking title");
-			assertEquals(driver.getTitle(), "Selenium Test Example Page");
 			LoadDataFromExcel dataFromExcel = new LoadDataFromExcel();
-			HashMap<String, JsonSiteStructure> jsonSitesList = LoadJsonData.parseJson();
-			jsonSiteObject = jsonSitesList.get("autoinsurance.xlsx");
-			mdaConfig = dataFromExcel.populateMdaConfigs(jsonSiteObject.getConfig());
-			urlStringList = jsonSiteObject.getUrlsList();
-			ProcessCBTMDA mDAs;
-			driver.get("https://www.autoinsurance.org/best-companies/");
-			mDAs = new ProcessCBTMDA(driver, allMdas, 1);
+			MDAConfig mdaConfig = dataFromExcel.populateMdaConfigs("insuranceproviders.xlsx");
+			driver.get("https://www.insuranceproviders.com/which-home-insurance-policy-is-best/");
+			/*
+			 * mDAs = new ProcessCBTMDA(driver, allMdas, 1);
+			 * mDAs.processMobileGrayMDA(mdaConfig, driver);
+			 */System.out.println(
+					"validate_blueMDA " + "https://www.insuranceproviders.com/which-home-insurance-policy-is-best/");
+			// driver.get(urlString);
+			Thread.sleep(5000);
+			// driver.manage().window().maximize();
+			mDAs = new ProcessMobileDropDownMDA(driver, allMdas, 1);
 			ProcessMda.execute_partial_BottomMDA = true;
-			mDAs.processMobileHeaderMDA(mdaConfig, driver);
-
-			// if we get to this point, then all the assertions have passed
-			// that means that we can set the score to pass in our system
+			// mDAs.processMobileGrayMDA(mdaConfig, driver, "Auto");
+			mDAs.processMobileGrayLikeBlueMDA(mdaConfig, driver, "Auto");
+			System.out.println("Passed TestCAse");
+			driver.quit();
 			myTest.testScore = "pass";
 
 		} catch (AssertionError ae) {

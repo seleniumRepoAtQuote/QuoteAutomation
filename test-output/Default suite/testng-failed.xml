@@ -3,11 +3,12 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="org.quote.mobileMDATests.AutoInsurance">
+      <class name="org.temp.sampleTests.LambdaTestMobile">
         <methods>
-          <include name="validate_SiteURLs"/>
+          <include name="testScript"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- org.quote.mobileMDATests.AutoInsurance -->
+      </class> <!-- org.temp.sampleTests.LambdaTestMobile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

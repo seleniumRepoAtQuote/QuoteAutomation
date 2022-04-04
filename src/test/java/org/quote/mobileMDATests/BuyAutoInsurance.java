@@ -38,28 +38,13 @@ public class BuyAutoInsurance {
 	private ArrayList<String> urlStringList;
 	private static JsonSiteStructure jsonSiteObject;
 	private ProcessCBTMDA mDAs;
-
+	private String fileName_Excel = "buyautoinsurance.xlsx";
 	@BeforeClass
 	@org.testng.annotations.Parameters(value = { "browserName", "deviceName", "platformVersion", "platformName",
 			"deviceOrientation" })
 	public void setup(String browserName, String deviceName, String platformVersion, String platformName,
 			String deviceOrientation, ITestContext context) throws IOException {
 
-		/*
-		 * if (platformName.equalsIgnoreCase("iOs")) { driverIPhone =
-		 * (IOSDriver<AndroidElement>)
-		 * SeleniumSetUpFunctions.initializeRemoteEnv(browserName, deviceName,
-		 * platformVersion, platformName, deviceOrientation, context); driver =
-		 * driverIPhone; } else { driverAndroid = (AndroidDriver<AndroidElement>)
-		 * SeleniumSetUpFunctions.initializeRemoteEnv(browserName, deviceName,
-		 * platformVersion, platformName, deviceOrientation, context); driver =
-		 * driverAndroid; }
-		 */
-
-		/*
-		 * driver = SeleniumSetUpFunctions.initializeRemoteEnv(browserName, deviceName,
-		 * platformVersion, platformName, deviceOrientation, context);
-		 */
 		driver = SeleniumSetUpFunctions.initializeRemoteEnv(browserName, deviceName, platformVersion, platformName,
 				deviceOrientation, context);
 	}
@@ -69,7 +54,7 @@ public class BuyAutoInsurance {
 		try {
 			LoadDataFromExcel dataFromExcel = new LoadDataFromExcel();
 			HashMap<String, JsonSiteStructure> jsonSitesList = LoadJsonData.parseJson();
-			jsonSiteObject = jsonSitesList.get("buyautoinsurance.xlsx");
+			jsonSiteObject = jsonSitesList.get(fileName_Excel);
 			mdaConfig = dataFromExcel.populateMdaConfigs(jsonSiteObject.getConfig());
 			urlStringList = jsonSiteObject.getUrlsList();
 			for (String urlString : urlStringList) {
@@ -117,7 +102,7 @@ public class BuyAutoInsurance {
 		if (bit) {
 			// mDAs.processHomePageTopMDA(mdaConfig, driver);
 		} else {
-			mDAs.processTopMDA(mdaConfig, driver);
+			mDAs.processMobileTopMDA(mdaConfig, driver);
 		}
 	}
 
@@ -139,7 +124,7 @@ public class BuyAutoInsurance {
 		driver.get(urlString);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processBlueMDA(mdaConfig, driver);
+		mDAs.processMobileBlueMDA(mdaConfig, driver);
 	}
 
 	public void validate_grayMDA(String urlString) throws InterruptedException {
@@ -147,7 +132,7 @@ public class BuyAutoInsurance {
 		driver.get(urlString);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processGrayMDA(mdaConfig, driver);
+		mDAs.processMobileGrayMDA(mdaConfig, driver);
 	}
 
 	public void validate_bottomMDA(String urlString) throws InterruptedException {
@@ -155,7 +140,7 @@ public class BuyAutoInsurance {
 		driver.get(urlString);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processBottomMDA(mdaConfig, driver);
+		mDAs.processMobileBottomMDA(mdaConfig, driver);
 	}
 
 	@AfterClass

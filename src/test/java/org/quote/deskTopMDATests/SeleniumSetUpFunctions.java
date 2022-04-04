@@ -4,15 +4,9 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.quote.DataTypes.JsonSiteStructure;
-import org.quote.DataTypes.MDAConfig;
 import org.quote.DataTypes.PlatformConfig;
-import org.quote.LoadData.LoadDataFromExcel;
-import org.quote.LoadData.LoadJsonData;
 import org.quote.MdaTypes.ProcessMda;
 import org.testng.ITestContext;
 
@@ -23,6 +17,8 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
 public class SeleniumSetUpFunctions {
 	private static RemoteWebDriver driver;
+	private static final String USERNAME = "deeps_Y4a10G";
+	private static final String AUTOMATE_KEY = "oTmoPxYJBscsisz9KRqj";
 	ArrayList<PlatformConfig> platforms;
 	ProcessMda mDAs;
 	private static String username = "info%40360quotellc.com"; // Your username
@@ -55,8 +51,37 @@ public class SeleniumSetUpFunctions {
 
 	}
 
+	public static RemoteWebDriver initializeRemoteEnvBrowserStack(String platform, String browserName, String version,
+			String screenResolution, ITestContext ctx) throws IOException {
+
+		DesiredCapabilities caps = new DesiredCapabilities();
+		/*
+		 * caps.setCapability("name", ctx.getCurrentXmlTest().getName());
+		 * caps.setCapability("record_video", "true"); //
+		 * caps.setCapability("record_network", "false");
+		 * caps.setCapability("browserName", browserName); caps.setCapability("version",
+		 * version); caps.setCapability("platform", platform);
+		 * caps.setCapability("screenResolution", screenResolution);
+		 */
+
+		caps.setCapability("record_video", "true");
+		caps.setCapability("os", "OS X");
+		caps.setCapability("os_version", "Big Sur");
+		caps.setCapability("browser", "Safari");
+		caps.setCapability("browser_version", "14.0");
+		caps.setCapability("browserstack.local", "false");
+		caps.setCapability("browserstack.selenium_version", "3.14.0");
+
+		URL url = new URL("https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub");
+		driver = new RemoteWebDriver(url, caps);
+
+		System.out.println(driver.getSessionId());
+		return driver;
+
+	}
+
 	public static void closedriver() throws UnirestException {
-		
+
 		driver.close();
 		driver.quit();
 	}

@@ -1,12 +1,16 @@
 package org.quote.MdaTypes;
 
 import java.util.ArrayList;
+import java.util.concurrent.TimeUnit;
+import java.util.function.Function;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.quote.DataTypes.MDAConfig;
 import org.quote.abstractWebSection.AbstractComponents;
 import org.slf4j.Logger;
@@ -124,13 +128,17 @@ public class ProcessMda extends AbstractComponents {
 		return;
 	}
 
+	
+
 	public void processHomePageTopMDA(MDAConfig mdaConfig, WebDriver driver) throws InterruptedException {
 		LOGGER.info("Processing Home Page Top MDA.");
 		System.out.println(sectionElements.size() + "sections size in topMDA function");
 		String originalHandle = driver.getWindowHandle();
+		
+		WebElement h1 = driver.findElement(
+				By.xpath("/html[1]/body[1]/allow-navigation[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]"));
 
-		WebElement h1 = driver
-				.findElement(By.xpath("//body/allow-navigation[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]"));
+		// "//body/allow-navigation[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]"));
 
 		Thread.sleep(5000);
 		System.out.println(h1.getText());
@@ -151,7 +159,7 @@ public class ProcessMda extends AbstractComponents {
 
 		WebElement getQuoteButton = topMDA.findElement(By.className("mda-submit"));
 		Thread.sleep(5000);
-		getQuoteButton.click();
+		getQuoteButton.submit();// click();
 		Thread.sleep(5000);
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		// switch to new tab
@@ -195,7 +203,7 @@ public class ProcessMda extends AbstractComponents {
 
 			WebElement getQuoteButton = topMDA.findElement(By.className("mda-submit"));
 			Thread.sleep(5000);
-			getQuoteButton.click();
+			getQuoteButton.submit();// click();
 			Thread.sleep(5000);
 			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 			// switch to new tab
@@ -252,7 +260,7 @@ public class ProcessMda extends AbstractComponents {
 			Thread.sleep(5000);
 			WebElement getQuoteButton = bottomMDA.findElement(By.className("mda-submit"));
 			// ("//div[1]/form[1]/div[2]/input[1]"));
-			getQuoteButton.click();
+			getQuoteButton.submit();// click();
 			Thread.sleep(500);
 			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 			// switch to new tab
@@ -314,7 +322,7 @@ public class ProcessMda extends AbstractComponents {
 			Thread.sleep(5000);
 			WebElement getQuoteButton = blueMDA.findElement(By.className("mda-submit"));
 			// ("//div[1]/form[1]/div[2]/input[1]"));
-			getQuoteButton.click();
+			getQuoteButton.submit();// click();
 			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 			// switch to new tab
 			Thread.sleep(500);
@@ -389,7 +397,7 @@ public class ProcessMda extends AbstractComponents {
 			WebElement getQuoteButton = grayMDA.findElement(By.className("mda-submit"));
 			Thread.sleep(5000);
 			// ("//div[1]/form[1]/div[2]/input[1]"));
-			getQuoteButton.click();
+			getQuoteButton.submit();// click();
 			ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 			// switch to new tab
 			Thread.sleep(500);
@@ -474,7 +482,7 @@ public class ProcessMda extends AbstractComponents {
 		driver.switchTo().window(originalHandle);
 		// driver.navigate().back();
 		// driver.close();
-		System.out.println("processHeaderMDA Done ==>#############################");
+		System.out.println("processHeaderMDAEnterButton Done ==>#############################");
 		return;
 	}
 
@@ -863,7 +871,7 @@ public class ProcessMda extends AbstractComponents {
 			}
 			WebElement getQuoteButton = topMDA.findElement(By.className("mda-submit"));
 			Thread.sleep(5000);
-			getQuoteButton.click();
+			getQuoteButton.submit();// click();
 			Thread.sleep(5000);
 			String str = zipWebElement.getText();
 			System.out.println(str);

@@ -16,7 +16,6 @@ import org.quote.LoadData.LoadDataFromExcel;
 import org.quote.LoadData.LoadJsonData;
 import org.quote.MdaTypes.ProcessCBTMDA;
 import org.quote.MdaTypes.ProcessMda;
-import org.quote.MdaTypes.processMobileMDA;
 import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterClass;
@@ -26,11 +25,7 @@ import org.testng.annotations.Test;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
-import io.appium.java_client.ios.IOSDriver;
-import io.appium.java_client.ios.IOSElement;
 
 public class AutoInsurance {
 	private static AppiumDriver<AndroidElement> driver;
@@ -40,6 +35,7 @@ public class AutoInsurance {
 	private ArrayList<String> urlStringList;
 	private static JsonSiteStructure jsonSiteObject;
 	private ProcessCBTMDA mDAs;
+	private String fileName_Excel = "autoinsurance.xlsx";
 
 	@BeforeClass
 	@org.testng.annotations.Parameters(value = { "browserName", "deviceName", "platformVersion", "platformName",
@@ -71,17 +67,19 @@ public class AutoInsurance {
 		try {
 			LoadDataFromExcel dataFromExcel = new LoadDataFromExcel();
 			HashMap<String, JsonSiteStructure> jsonSitesList = LoadJsonData.parseJson();
-			jsonSiteObject = jsonSitesList.get("autoinsurance.xlsx");
+			jsonSiteObject = jsonSitesList.get(fileName_Excel);
 			mdaConfig = dataFromExcel.populateMdaConfigs(jsonSiteObject.getConfig());
 			urlStringList = jsonSiteObject.getUrlsList();
 			for (String urlString : urlStringList) {
-				// validate_headerMDAEnterButton(urlString);
+
 				validate_headerMDA(urlString);
-				/*
-				 * validate_TopMDA(urlString); validate_grayMDA(urlString);
-				 * validate_blueMDA(urlString); validate_bottomMDA(urlString);
-				 * SeleniumSetUpFunctions.setTestScore("pass");
-				 */
+
+				validate_TopMDA(urlString);
+
+				validate_grayMDA(urlString);
+				validate_blueMDA(urlString);
+				validate_bottomMDA(urlString);
+
 			}
 			SeleniumSetUpFunctions.setScore(driver.getSessionId().toString(), "pass");
 			SeleniumSetUpFunctions.closedriver();
@@ -114,12 +112,13 @@ public class AutoInsurance {
 		System.out.println("validate_TopMDA" + urlString);
 		bit = TestUtilities.isHomePage(urlString);
 		driver.get(urlString);
+		Thread.sleep(8000);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
 		if (bit) {
-			// mDAs.processHomePageTopMDA(mdaConfig, driver);
+			mDAs.processMobileHomePageTopMDA(mdaConfig, driver);
 		} else {
-			mDAs.processTopMDA(mdaConfig, driver);
+			mDAs.processMobileTopMDA(mdaConfig, driver);
 		}
 	}
 
@@ -139,25 +138,29 @@ public class AutoInsurance {
 	public void validate_blueMDA(String urlString) throws InterruptedException {
 		System.out.println("validate_blueMDA" + urlString);
 		driver.get(urlString);
+		Thread.sleep(5000);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processBlueMDA(mdaConfig, driver);
+		mDAs.processMobileBlueMDA(mdaConfig, driver);
 	}
 
 	public void validate_grayMDA(String urlString) throws InterruptedException {
 		System.out.println("validate_grayMDA" + urlString);
 		driver.get(urlString);
+		Thread.sleep(5000);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processGrayMDA(mdaConfig, driver);
+		mDAs.execute_partial_bottomMobileMDA = true;
+		mDAs.processMobileGrayMDA(mdaConfig, driver);
 	}
 
 	public void validate_bottomMDA(String urlString) throws InterruptedException {
 		System.out.println("validate_bottomMDA" + urlString);
 		driver.get(urlString);
+		Thread.sleep(5000);
 		// driver.manage().window().maximize();
 		mDAs = new ProcessCBTMDA(driver, allMdas, 1);
-		mDAs.processBottomMDA(mdaConfig, driver);
+		mDAs.processMobileBottomMDA(mdaConfig, driver);
 	}
 
 	@AfterClass

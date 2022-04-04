@@ -9,11 +9,34 @@
 		<parameter name="platformName" value="iOS" />
 		<parameter name="deviceOrientation" value="portrait" />
 		<classes>
-		<class name="org.quote.mobileMDATests.CarInsuranceCompanies" />
-			<!-- <class name="org.quote.mobileMDATests.QuoteInspector" /> -->
-			<!-- <class name="org.quote.mobileMDATests.AutoinsureSavings" /> -->
-			<!-- <class name="org.quote.mobileMDATests.BuyAutoInsurance" />
-			<class name="org.quote.mobileMDATests.AutoInsurance" />
+			<!-- <class name="org.quote.mobileMDATests.AutoInsurance" /> -->
+			<!-- <class name="org.quote.mobileMDATests.TopQuoteLifeInsurance" />
+			<class name="org.quote.mobileMDATests.SR22InsuranceQuotes" />
+			<class name="org.quote.mobileMDATests.CarInsurance" />
+			<class name="org.quote.mobileMDATests.Insurantly" /> -->
+			<!-- <class name="org.quote.mobileMDATests.LifeInsurancePost" /> -->
+			<!-- <class name="org.quote.mobileMDATests.PetInsuranceU" />
+
+			<class name="org.quote.mobileMDATests.SureBuyCarInsurance" /> -->
+			<!-- <class name="org.quote.mobileMDATests.LifeInsuranceTypes" /> -->
+			<!-- <class
+				name="org.quote.mobileMDATests.CarInsuranceCompaniesDOTNet" />
+			<class name="org.quote.mobileMDATests.FloridaCarInsurance" />
+			<class name="org.quote.mobileMDATests.CompareCarInsurance" />
+			<class
+				name="org.quote.mobileMDATests.MobileHomeInsuranceQuotes" />
+			<class
+				name="org.quote.mobileMDATests.FullCoverageAutoInsurances" />
+			<class name="org.quote.mobileMDATests.NoFaultInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.mobileMDATests.GapInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.mobileMDATests.BroadformInsurance" />
+			<class name="org.quote.mobileMDATests.VeteransAutoInsurance" />
+			<class name="org.quote.mobileMDATests.CarInsurance101" />
+			<class name="org.quote.mobileMDATests.CheapCarInsuranceQuotes" />
+			<class name="org.quote.mobileMDATests.CarInsuranceCompanies" />
+			<class name="org.quote.mobileMDATests.QuoteInspector" />
+			<class name="org.quote.mobileMDATests.AutoinsureSavings" />
+			<class name="org.quote.mobileMDATests.BuyAutoInsurance" />
 			<class name="org.quote.mobileMDATests.EffortlessInsurance" />
 			<class name="org.quote.mobileMDATests.CarInsuranceComparison" />
 			<class name="org.quote.mobileMDATests.AutoInsuranceez" />
@@ -22,19 +45,29 @@
 	</test>
 	<test name="androidChromeTest">
 		<parameter name="browserName" value="Chrome" />
-		<parameter name="deviceName" value="Galaxy S10" />
-		<parameter name="platformVersion" value="10.0" />
+		<parameter name="deviceName" value="Pixel 4A" />
+		<parameter name="platformVersion" value="11.0" />
 		<parameter name="platformName" value="Android" />
 		<parameter name="deviceOrientation" value="portrait" />
 		<classes>
-		<class name="org.quote.mobileMDATests.CarInsuranceCompanies" />
-		<!-- <class name="org.quote.mobileMDATests.AutoinsureSavings" /> -->
+			<class name="org.quote.mobileMDATests.AutoInsurance" />
+			<!-- <class name="org.quote.mobileMDATests.FullCoverageAutoInsurances" 
+				/> -->
+			<!-- <class name="org.quote.mobileMDATests.NoFaultInsuranceQuotes" /> -->
+
+
+			<!-- <class name="org.quote.mobileMDATests.VeteransAutoInsurance" /> -->
+			<!-- <class name="org.quote.mobileMDATests.CarInsurance101" /> -->
+			<!-- <class name="org.quote.mobileMDATests.CheapCarInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.mobileMDATests.CarInsuranceCompanies" /> -->
+			<!-- <class name="org.quote.mobileMDATests.AutoinsureSavings" /> -->
 			<!-- <class name="org.quote.mobileMDATests.QuoteInspector" /> -->
 			<!-- <class name="org.quote.mobileMDATests.AutoInsurance" /> -->
-			<!--<class name="org.quote.mobileMDATests.BuyAutoInsurance" /> <class 
-				name="org.quote.mobileMDATests.EffortlessInsurance" /> <class name="org.quote.mobileMDATests.CarInsuranceComparison" 
-				/> <class name="org.quote.mobileMDATests.AutoInsuranceez" /> <class name="org.quote.mobileMDATests.F4AutoInsuranceQuote" 
-				/> -->
+			<!-- class name="org.quote.mobileMDATests.BuyAutoInsurance" /> -->
+			<!-- <class name="org.quote.mobileMDATests.EffortlessInsurance" /> -->
+			<!-- <class name="org.quote.mobileMDATests.CarInsuranceComparison" /> -->
+			<!-- <class name="org.quote.mobileMDATests.AutoInsuranceez" /> -->
+			<!-- <class name="org.quote.mobileMDATests.F4AutoInsuranceQuote" /> -->
 		</classes>
 	</test>
 </suite>

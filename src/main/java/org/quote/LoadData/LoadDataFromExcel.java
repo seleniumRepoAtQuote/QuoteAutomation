@@ -114,7 +114,7 @@ public class LoadDataFromExcel {
 						mdaConfig.setMdaTitleHomePage(strType);
 						System.out.print(mdaConfig.getMdaTitleHomePage() + "\n");
 						break;
-					case "mdaTextHomepage":
+					case "mdaTextHomePage":
 						cell = cellIterator.next();
 						strType = cell.getStringCellValue();
 						mdaConfig.setMdaTextHomepage(strType);
@@ -126,7 +126,7 @@ public class LoadDataFromExcel {
 						mdaConfig.setMdaTextHeader(strType);
 						System.out.print(mdaConfig.getMdaTextHeader() + "\n");
 						break;
-					case "MdaTitle":
+					case "mdaTitle":
 						cell = cellIterator.next();
 						strType = cell.getStringCellValue();
 						mdaConfig.setMdaTitle(strType);
@@ -150,7 +150,7 @@ public class LoadDataFromExcel {
 						mdaConfig.setPageTitleCurrentTab(strType);
 						System.out.print(mdaConfig.getPageTitleCurrentTab() + "\n");
 						break;
-					case "pageTitlenewTab":
+					case "pageTitleNewTab":
 						cell = cellIterator.next();
 						strType = cell.getStringCellValue();
 						mdaConfig.setPageTitlenewTab(strType);
@@ -188,7 +188,7 @@ public class LoadDataFromExcel {
 								cell = cellIterator.next();
 								strType = cell.getStringCellValue();
 								dropDownList.add(strType);
-								System.out.print("DrpDown" + strType + "\n");
+								System.out.print("DrpDown " + strType + "\n");
 							}
 							mdaConfig.setDropDownList(dropDownList);
 							System.out.println(mdaConfig.getDropDownList().toString());

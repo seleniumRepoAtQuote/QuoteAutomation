@@ -42,7 +42,7 @@
 		"site": {
 			"MDAConfig": "autoinsurance.xlsx",
 			"URLs": [
-				"https://www.autoinsurance.org/best-companies/",
+				"https://www.autoinsurance.org/auto-insurance-for-custom-cars/",
 				"https://www.autoinsurance.org/companies/infinity-auto-insurance-review/",
 				"https://www.autoinsurance.org/"
 			]
@@ -64,8 +64,8 @@
 			"MDAConfig": "quoteinspector.xlsx",
 			"URLs": [
 				"https://www.quoteinspector.com/which-cars-are-cheapest-to-insure/",
-				"https://www.quoteinspector.com/california-car-insurance/",
-				"https://www.quoteinspector.com/insurance/vehicles/ford/escape/"
+				"https://www.quoteinspector.com/2020-honda-accord-lower-insurance-rates/",
+				"https://www.quoteinspector.com/los-angeles-car-insurance-rates/"
 			]
 		}
 	},
@@ -86,8 +86,278 @@
 			"URLs": [
 				"https://www.carinsurancecompanies.com/",
 				"https://www.carinsurancecompanies.com/car-insurance-quotes/",
-				"https://www.autoinsuresavings.org/hartford-car-insurance-prices-state-comparison/",
-				"https://www.carinsurancecompanies.com/car-insurance-companies/"
+				"https://www.carinsurancecompanies.com/car-insurance-companies/",
+				"https://www.carinsurancecompanies.com/national-american-car-insurance-review/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "cheapcarinsurancequotes.xlsx",
+			"URLs": [
+				"https://www.cheapcarinsurancequotes.com/",
+				"https://www.cheapcarinsurancequotes.com/car-insurance-by-state/",
+				"https://www.cheapcarinsurancequotes.com/farmers-union-insurance-review/",
+				"https://www.cheapcarinsurancequotes.com/mountain-laurel-assurance-reviews/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "carinsurance101.xlsx",
+			"URLs": [
+				"https://www.carinsurance101.com/",
+				"https://www.carinsurance101.com/affordable-car-insurance/",
+				"https://www.carinsurance101.com/liberty-mutual-auto-insurance-review/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "veteransautoinsurance.xlsx",
+			"URLs": [
+				"https://www.veteransautoinsurance.com/",
+				"https://www.veteransautoinsurance.com/what-you-need-to-know-about-auto-insurance-for-military-veterans/",
+				"https://www.veteransautoinsurance.com/usaa-car-insurance-review/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "topquotelifeinsurance.xlsx",
+			"URLs": [
+				"https://www.topquotelifeinsurance.com/",
+				"https://www.topquotelifeinsurance.com/whole-life-insurance-quotes/dividend-paying-whole-life/",
+				"https://www.topquotelifeinsurance.com/best-life-insurance-companies/cincinnati-life/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "sr22insurancequotes.xlsx",
+			"URLs": [
+				"https://www.sr22insurancequotes.org/",
+				"https://www.sr22insurancequotes.org/non-owner-sr22-insurance/",
+				"https://www.sr22insurancequotes.org/sr22-filing/what-is-sr22-filing/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "carinsurance.xlsx",
+			"URLs": [
+				"https://www.carinsurance.org/",
+				"https://www.carinsurance.org/guide/laws/car-insurance-fraud/",
+				"https://www.carinsurance.org/city/houston-texas/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "insurantly.xlsx",
+			"URLs": [
+				"https://www.insurantly.com/",
+				"https://www.insurantly.com/discounts/",
+				"https://www.insurantly.com/state-farm-auto-insurance-review/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "lifeinsurancepost.xlsx",
+			"URLs": [
+				"https://www.lifeinsurancepost.com/",
+				"https://www.lifeinsurancepost.com/best-life-insurance-companies/",
+				"https://www.lifeinsurancepost.com/no-exam-life-insurance-diabetics/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "petinsuranceu.xlsx",
+			"URLs": [
+				"https://www.petinsuranceu.com/",
+				"https://www.petinsuranceu.com/nationwide-pet-insurance-reviews/",
+				"https://www.petinsuranceu.com/hypoallergenic-dogs/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "surebuycarinsurance.xlsx",
+			"URLs": [
+				"https://www.surebuycarinsurance.com/",
+				"https://www.surebuycarinsurance.com/fix-bad-credit-score-seniors/",
+				"https://www.surebuycarinsurance.com/register-and-buy-car-with-suspended-license/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "lifeinsurancetypes.xlsx",
+			"URLs": [
+				"https://www.lifeinsurancetypes.com/life-insurance-companies-that-specialize-in-higher-risk/",
+				"https://www.lifeinsurancetypes.com/can-you-increase-your-life-insurance/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "carinsurancecompaniesDOTNet.xlsx",
+			"URLs": [
+				"https://www.carinsurancecompanies.net/",
+				"https://www.carinsurancecompanies.net/musicians-car-insurance/",
+				"https://www.carinsurancecompanies.net/am-i-covered-by-my-parents-auto-insurance/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "floridacarinsurance.xlsx",
+			"URLs": [
+				"https://www.floridacarinsurance.com/",
+				"https://www.floridacarinsurance.com/top-ten-family-attractions-in-florida/",
+				"https://www.floridacarinsurance.com/weird-laws-in-florida/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "comparecarinsurance.xlsx",
+			"URLs": [
+				"https://www.comparecarinsurance.com/",
+				"https://www.comparecarinsurance.com/the-expected-price-of-car-insurance-for-a-dodge-charger/",
+				"https://www.comparecarinsurance.com/category/cheap-car-insurance-category/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "mobilehomeinsurancequotes.xlsx",
+			"URLs": [
+				"https://www.mobilehomeinsurancequotes.org/",
+				"https://www.mobilehomeinsurancequotes.org/mobile-home-insurance-florida-homeowners-need-to-have/",
+				"https://www.mobilehomeinsurancequotes.org/mobile-home-insurance-arizona-residents-are-encouraged-to-have/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "fullcoverageautoinsurances.xlsx",
+			"URLs": [
+				"https://www.fullcoverageautoinsurances.com/",
+				"https://www.fullcoverageautoinsurances.com/illinois/",
+				"https://www.fullcoverageautoinsurances.com/texting-and-driving/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "nofaultinsurancequotes.xlsx",
+			"URLs": [
+				"https://www.nofaultinsurancequotes.org/",
+				"https://www.nofaultinsurancequotes.org/buying-no-fault-insurance/",
+				"https://www.nofaultinsurancequotes.org/insurance-quotes/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "gapinsurancequotes.xlsx",
+			"URLs": [
+				"https://www.gapinsurancequotes.org/",
+				"https://www.gapinsurancequotes.org/how-much-does-gap-insurance-cost/",
+				"https://www.gapinsurancequotes.org/do-you-need-to-buy-gap-insurance/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "broadforminsurance.xlsx",
+			"URLs": [
+				"https://www.broadforminsurance.org/",
+				"https://www.broadforminsurance.org/what-is-broad-form-car-insurance/",
+				"https://www.broadforminsurance.org/california/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "expertinsurancereviews.xlsx",
+			"URLs": [
+				"https://www.expertinsurancereviews.com/compare-car-insurance/",
+				"https://www.expertinsurancereviews.com/manhattan-life-medicare/",
+				"https://www.expertinsurancereviews.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "insuranceproviders.xlsx",
+			"URLs": [
+				"https://www.insuranceproviders.com/which-home-insurance-policy-is-best/",
+				"https://www.insuranceproviders.com/amalgamated-life-vs-trustmark-insurance-company/",
+				"https://www.insuranceproviders.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "usinsuranceagents.xlsx",
+			"URLs": [
+				"https://www.usinsuranceagents.com/reviews/chubb/",
+				"https://www.usinsuranceagents.com/switching-insurance-companies-open-claim/",
+				"https://www.usinsuranceagents.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "freeadvice.xlsx",
+			"URLs": [
+				"https://www.freeadvice.com/insurance/homeowners-and-renters-insurance/",
+				"https://www.freeadvice.com/legal/state-motorcycle-helmet-laws/",
+				"https://www.freeadvice.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "Loans.xlsx",
+			"URLs": [
+				"https://www.loans.org/local-search/connecticut/",
+				"https://www.loans.org/local/san-jose-ca/",
+				"https://www.loans.org/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "thetruthaboutinsurance.xlsx",
+			"URLs": [
+				"https://www.thetruthaboutinsurance.com/esurance-review/",
+				"https://www.thetruthaboutinsurance.com/top-10-insurance-complaints/",
+				"https://www.thetruthaboutinsurance.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "quote.xlsx",
+			"URLs": [
+				"https://www.quote.com/travel-insurance/",
+				"https://www.quote.com/auto-insurance/",
+				"https://www.quote.com/"
+			]
+		}
+	},
+	{
+		"site": {
+			"MDAConfig": "insuranceblogbychris.xlsx",
+			"URLs": [
+				"https://www.insuranceblogbychris.com/best-car-insurance-companies/",
+				"https://www.insuranceblogbychris.com/figo-pet-insurance/",
+				"https://www.insuranceblogbychris.com/"
 			]
 		}
 	}

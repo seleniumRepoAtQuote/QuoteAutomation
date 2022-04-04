@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegressionSuite">
+	<test name="MacSafariTest">
+		<parameter name="platform" value="Mac OSX 10.15" />
+		<parameter name="browserName" value="Safari" />
+		<parameter name="version" value="13" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			
+		</classes>
+	</test>
+	<test name="MacChromeTest">
+		<parameter name="platform" value="Mac OSX 10.14" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="version" value="87" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			
+		</classes>
+	</test>
+	<test name="WinChromeTest">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="version" value="96" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<class name="com.quote.dropDown.deskTopMDATests.InsuranceProviders" />
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.ExpertInsuranceReviews" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.UsInsuranceAgents" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.TheTruthAboutInsurance" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.FreeAdvice" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.Quote" /> -->
+			<!-- <class name="com.quote.dropDown.deskTopMDATests.InsuranceBlogByChris" /> -->
+		</classes>
+	</test>
+	<test name="WinFireFoxTest">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="Firefox" />
+		<parameter name="version" value="95" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			
+		</classes>
+	</test>
+</suite>

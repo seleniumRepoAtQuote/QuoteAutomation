@@ -6,21 +6,142 @@
 		<parameter name="version" value="13" />
 		<parameter name="screenResolution" value="1366x768" />
 		<classes>
-			<class name="org.quote.deskTopMDATests.AI_CheckMDAs" />
-			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceComparison" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsurance" />
+			<class name="org.quote.deskTopMDATests.CarInsuranceComparison" />
+			<class name="org.quote.deskTopMDATests.AutoInsuranceez" />
+			<class name="org.quote.deskTopMDATests.AutoinsureSavings" />
+			<class name="org.quote.deskTopMDATests.BroadformInsurance" />
+			<class name="org.quote.deskTopMDATests.BuyAutoInsurance" />
+			<class name="org.quote.deskTopMDATests.CarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance101" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompanies" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompaniesDOTNet" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CheapCarInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CompareCarInsurance" />
+			<class name="org.quote.deskTopMDATests.EffortlessInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.F4AutoInsuranceQuote" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FloridaCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FullCoverageAutoInsurances" />
+			<class name="org.quote.deskTopMDATests.GapInsuranceQuotes" />
+			<class name="org.quote.deskTopMDATests.Insurantly" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsurancePost" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsuranceTypes" />
+			<class name="org.quote.deskTopMDATests.MobileHomeInsuranceQuotes" />
+			<class name="org.quote.deskTopMDATests.NoFaultInsuranceQuotes" />
+			<class name="org.quote.deskTopMDATests.PetInsuranceU" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.QuoteInspector" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.SR22InsuranceQuotes" />
+			<class name="org.quote.deskTopMDATests.SureBuyCarInsurance" />
+			<class name="org.quote.deskTopMDATests.TopQuoteLifeInsurance" />
+			<class name="org.quote.deskTopMDATests.VeteransAutoInsurance" /> -->
 		</classes>
 	</test>
-	<!-- <test name="MacChromeTest"> <parameter name="platform" value="Mac OSX 
-		10.14" /> <parameter name="browserName" value="Chrome" /> <parameter name="version" 
-		value="87" /> <parameter name="screenResolution" value="1366x768" /> <classes> 
-		<class name="org.quote.mdaTests.AI_CheckMDAs" /> <class name="org.quote.mdaTests.CarInsuranceComparison" 
-		/> </classes> </test> <test name="WinChromeTest"> <parameter name="platform" 
-		value="Windows 10" /> <parameter name="browserName" value="Chrome" /> <parameter 
-		name="version" value="96" /> <parameter name="screenResolution" value="1366x768" 
-		/> <classes> <class name="org.quote.mdaTests.AI_CheckMDAs" /> <class name="org.quote.mdaTests.CarInsuranceComparison" 
-		/> </classes> </test> <test name="WinFireFoxTest"> <parameter name="platform" 
-		value="Windows 10" /> <parameter name="browserName" value="Firefox" /> <parameter 
-		name="version" value="95" /> <parameter name="screenResolution" value="1366x768" 
-		/> <classes> <class name="org.quote.mdaTests.AI_CheckMDAs" /> <class name="org.quote.mdaTests.CarInsuranceComparison" 
-		/> </classes> </test> -->
+	<test name="MacChromeTest">
+		<parameter name="platform" value="Mac OSX 10.14" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="version" value="87" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceComparison" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsuranceez" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoinsureSavings" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.BroadformInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.BuyAutoInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance101" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompanies" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompaniesDOTNet" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CheapCarInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CompareCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.EffortlessInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.F4AutoInsuranceQuote" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FloridaCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FullCoverageAutoInsurances" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.GapInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.Insurantly" /> -->
+		    <!-- <class name="org.quote.deskTopMDATests.LifeInsurancePost" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsuranceTypes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.MobileHomeInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.NoFaultInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.PetInsuranceU" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.QuoteInspector" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.SR22InsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.SureBuyCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.TopQuoteLifeInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.VeteransAutoInsurance" /> -->
+		</classes>
+	</test>
+	<test name="WinChromeTest">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="version" value="96" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceComparison" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsuranceez" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoinsureSavings" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.BroadformInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.BuyAutoInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance101" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompanies" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompaniesDOTNet" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CheapCarInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CompareCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.EffortlessInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.F4AutoInsuranceQuote" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FloridaCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FullCoverageAutoInsurances" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.GapInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.Insurantly" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsurancePost" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsuranceTypes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.MobileHomeInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.NoFaultInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.PetInsuranceU" /> -->
+			<class name="org.quote.deskTopMDATests.QuoteInspector" />
+			<!-- <class name="org.quote.deskTopMDATests.SR22InsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.SureBuyCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.TopQuoteLifeInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.VeteransAutoInsurance" /> -->
+		</classes>
+	</test>
+	<test name="WinFireFoxTest">
+		<parameter name="platform" value="Windows 10" />
+		<parameter name="browserName" value="Firefox" />
+		<parameter name="version" value="95" />
+		<parameter name="screenResolution" value="1366x768" />
+		<classes>
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceComparison" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoInsuranceez" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.AutoinsureSavings" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.BroadformInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.BuyAutoInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsurance101" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompanies" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CarInsuranceCompaniesDOTNet" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CheapCarInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.CompareCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.EffortlessInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.F4AutoInsuranceQuote" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FloridaCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.FullCoverageAutoInsurances" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.GapInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.Insurantly" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsurancePost" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.LifeInsuranceTypes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.MobileHomeInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.NoFaultInsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.PetInsuranceU" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.QuoteInspector" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.SR22InsuranceQuotes" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.SureBuyCarInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.TopQuoteLifeInsurance" /> -->
+			<!-- <class name="org.quote.deskTopMDATests.VeteransAutoInsurance" /> -->
+		</classes>
+	</test>
 </suite>

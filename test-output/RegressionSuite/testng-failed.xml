@@ -1,45 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [RegressionSuite]">
-  <parameter name="platformVersion" value="10.0"/>
-  <parameter name="browserName" value="Chrome"/>
-  <parameter name="deviceOrientation" value="portrait"/>
-  <parameter name="platformName" value="Android"/>
-  <parameter name="deviceName" value="Galaxy S10"/>
-  <test name="iPhoneSafariTest(failed)">
-    <parameter name="platformVersion" value="12.1"/>
-    <parameter name="browserName" value="Safari"/>
-    <parameter name="deviceOrientation" value="portrait"/>
-    <parameter name="platformName" value="iOS"/>
-    <parameter name="deviceName" value="iPhone XR"/>
-    <classes>
-      <class name="org.quote.mobileMDATests.CarInsuranceCompanies">
-        <methods>
-          <include name="close"/>
-          <include name="close"/>
-          <include name="setup"/>
-          <include name="setup"/>
-          <include name="validate_SiteURLs"/>
-        </methods>
-      </class> <!-- org.quote.mobileMDATests.CarInsuranceCompanies -->
-    </classes>
-  </test> <!-- iPhoneSafariTest(failed) -->
-  <test name="androidChromeTest(failed)">
-    <parameter name="platformVersion" value="10.0"/>
+  <parameter name="browserName" value="Firefox"/>
+  <parameter name="screenResolution" value="1366x768"/>
+  <parameter name="version" value="95"/>
+  <parameter name="platform" value="Windows 10"/>
+  <test name="WinChromeTest(failed)">
     <parameter name="browserName" value="Chrome"/>
-    <parameter name="deviceOrientation" value="portrait"/>
-    <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="Galaxy S10"/>
+    <parameter name="screenResolution" value="1366x768"/>
+    <parameter name="version" value="96"/>
+    <parameter name="platform" value="Windows 10"/>
     <classes>
-      <class name="org.quote.mobileMDATests.CarInsuranceCompanies">
+      <class name="com.quote.dropDown.deskTopMDATests.InsuranceProviders">
         <methods>
-          <include name="close"/>
-          <include name="close"/>
-          <include name="setup"/>
           <include name="setup"/>
           <include name="validate_SiteURLs"/>
         </methods>
-      </class> <!-- org.quote.mobileMDATests.CarInsuranceCompanies -->
+      </class> <!-- com.quote.dropDown.deskTopMDATests.InsuranceProviders -->
     </classes>
-  </test> <!-- androidChromeTest(failed) -->
+  </test> <!-- WinChromeTest(failed) -->
 </suite> <!-- Failed suite [RegressionSuite] -->

@@ -1,240 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="0" failed="2" skipped="0">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-22T03:00:43Z" name="RegressionSuite" finished-at="2022-02-22T03:04:36Z" duration-ms="232445">
+  <suite started-at="2022-04-01T18:47:31Z" name="RegressionSuite" finished-at="2022-04-01T18:59:18Z" duration-ms="706914">
     <groups>
     </groups>
-    <test started-at="2022-02-22T03:00:43Z" name="iPhoneSafariTest" finished-at="2022-02-22T03:03:09Z" duration-ms="146045">
-      <class name="org.quote.mobileMDATests.CarInsuranceCompanies">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:org.quote.mobileMDATests.CarInsuranceCompanies@419c5f1a]" started-at="2022-02-21T22:00:43Z" name="setup" finished-at="2022-02-21T22:01:15Z" duration-ms="32049" status="PASS">
+    <test started-at="2022-04-01T18:47:31Z" name="MacSafariTest" finished-at="2022-04-01T18:47:31Z" duration-ms="10">
+    </test> <!-- MacSafariTest -->
+    <test started-at="2022-04-01T18:47:31Z" name="MacChromeTest" finished-at="2022-04-01T18:47:31Z" duration-ms="1">
+    </test> <!-- MacChromeTest -->
+    <test started-at="2022-04-01T18:47:31Z" name="WinChromeTest" finished-at="2022-04-01T18:59:18Z" duration-ms="706745">
+      <class name="com.quote.dropDown.deskTopMDATests.InsuranceProviders">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:com.quote.dropDown.deskTopMDATests.InsuranceProviders@60d8c9b7]" started-at="2022-04-01T14:47:31Z" name="setup" finished-at="2022-04-01T14:47:41Z" duration-ms="9838" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Safari]]>
+                <![CDATA[Windows 10]]>
               </value>
             </param>
             <param index="1">
-              <value>
-                <![CDATA[iPhone XR]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[12.1]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[iOS]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[portrait]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[org.testng.TestRunner@7dd611c8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validate_SiteURLs()[pri:0, instance:org.quote.mobileMDATests.CarInsuranceCompanies@419c5f1a]" started-at="2022-02-21T22:01:15Z" name="validate_SiteURLs" finished-at="2022-02-21T22:03:09Z" duration-ms="113986" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[WebDriverException occured : ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: WebDriverException occured : 
-	at org.testng.Assert.fail(Assert.java:83)
-	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and may not be manipulated (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6DRS0JN', ip: '10.168.10.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {additionalWebviewBundleIds: [com.apple.mobilesafari], autoAcceptAlerts: true, autoWebview: true, automationName: XCUITest, browserName: Safari, databaseEnabled: false, derivedDataPath: /opt/cbt/wda_builds/appium_..., deviceName: iPhone, includeSafariInWebviews: true, javascriptEnabled: true, locationContextEnabled: false, maxInstances: 1, nativeWebTap: true, networkConnectionEnabled: false, newCommandTimeout: 600, orientation: PORTRAIT, platform: IOS, platformName: iOS, platformVersion: 12, safariAllowPopups: true, safariIgnoreFraudWarning: true, safariLogAllCommunication: true, safariOpenLinksInBackground: true, showXcodeLog: true, startIWDP: true, takesScreenshot: true, udid: 00008020-00144D523AF2002E, usePrebuiltWDA: true, version: 12.1, waitForQuiescence: true, wdaLocalPort: 21639, webStorageEnabled: false, webkitDebugProxyPort: 14639, xcodeConfigFile: /opt/cbt/appium/LaunchOptio...}
-Session ID: 7d6170c3-b9b2-4326-bb71-96590476ae37
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.ios.IOSElement.execute(IOSElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
-	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
-	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
-	... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validate_SiteURLs -->
-        <test-method is-config="true" signature="close()[pri:0, instance:org.quote.mobileMDATests.CarInsuranceCompanies@419c5f1a]" started-at="2022-02-21T22:03:09Z" name="close" finished-at="2022-02-21T22:03:09Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- org.quote.mobileMDATests.CarInsuranceCompanies -->
-    </test> <!-- iPhoneSafariTest -->
-    <test started-at="2022-02-22T03:03:09Z" name="androidChromeTest" finished-at="2022-02-22T03:04:36Z" duration-ms="86369">
-      <class name="org.quote.mobileMDATests.CarInsuranceCompanies">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:org.quote.mobileMDATests.CarInsuranceCompanies@47d90b9e]" started-at="2022-02-21T22:03:09Z" name="setup" finished-at="2022-02-21T22:03:27Z" duration-ms="17924" status="PASS">
-          <params>
-            <param index="0">
               <value>
                 <![CDATA[Chrome]]>
               </value>
             </param>
-            <param index="1">
-              <value>
-                <![CDATA[Galaxy S10]]>
-              </value>
-            </param>
             <param index="2">
               <value>
-                <![CDATA[10.0]]>
+                <![CDATA[96]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Android]]>
+                <![CDATA[1366x768]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[portrait]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[org.testng.TestRunner@278667fd]]>
+                <![CDATA[org.testng.TestRunner@6fef75c6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validate_SiteURLs()[pri:0, instance:org.quote.mobileMDATests.CarInsuranceCompanies@47d90b9e]" started-at="2022-02-21T22:03:27Z" name="validate_SiteURLs" finished-at="2022-02-21T22:04:36Z" duration-ms="68438" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[WebDriverException occured : ]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: WebDriverException occured : 
-	at org.testng.Assert.fail(Assert.java:83)
-	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:109)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=80.0.3987.99) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-6DRS0JN', ip: '10.168.10.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.1'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Galaxy S10, newCommandTimeout: 600, orientation: PORTRAIT, platformName: Android, platformVersion: 10.0, udid: RF8MC0VLHBP}, deviceApiLevel: 29, deviceManufacturer: samsung, deviceModel: SM-G9730, deviceName: RF8MC0VLHBP, deviceScreenDensity: 420, deviceScreenSize: 1080x2280, deviceUDID: RF8MC0VLHBP, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, newCommandTimeout: 600, orientation: PORTRAIT, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 10, statBarHeight: 112, takesScreenshot: true, udid: RF8MC0VLHBP, viewportRect: {height: 1930, left: 0, top: 112, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 965befd7-667c-466b-9102-afe49cdc0e9b
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
-	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
-	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-	at org.quote.MdaTypes.ProcessCBTMDA.processMobileHeaderMDA(ProcessCBTMDA.java:528)
-	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_headerMDA(CarInsuranceCompanies.java:136)
-	at org.quote.mobileMDATests.CarInsuranceCompanies.validate_SiteURLs(CarInsuranceCompanies.java:80)
-	... 24 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="validate_SiteURLs()[pri:0, instance:com.quote.dropDown.deskTopMDATests.InsuranceProviders@60d8c9b7]" started-at="2022-04-01T14:47:41Z" name="validate_SiteURLs" finished-at="2022-04-01T14:59:18Z" duration-ms="696885" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validate_SiteURLs -->
-        <test-method is-config="true" signature="close()[pri:0, instance:org.quote.mobileMDATests.CarInsuranceCompanies@47d90b9e]" started-at="2022-02-21T22:04:36Z" name="close" finished-at="2022-02-21T22:04:36Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- org.quote.mobileMDATests.CarInsuranceCompanies -->
-    </test> <!-- androidChromeTest -->
+      </class> <!-- com.quote.dropDown.deskTopMDATests.InsuranceProviders -->
+    </test> <!-- WinChromeTest -->
+    <test started-at="2022-04-01T18:59:18Z" name="WinFireFoxTest" finished-at="2022-04-01T18:59:18Z" duration-ms="1">
+    </test> <!-- WinFireFoxTest -->
   </suite> <!-- RegressionSuite -->
 </testng-results>

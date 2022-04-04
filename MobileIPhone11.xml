@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RegressionSuite">
+
+
+	<test name="iPhoneSafariTest">
+		<parameter name="browserName" value="Safari" />
+		<parameter name="deviceName" value="iPhone 11" />
+		<parameter name="platformVersion" value="13.1.3" />
+		<parameter name="platformName" value="iOS" />
+		<parameter name="deviceOrientation" value="portrait" />
+		<classes>
+
+			<class name="org.quote.mobileMDATests.VeteransAutoInsurance" />
+
+		</classes>
+	</test>
+	<test name="androidChromeTest">
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="deviceName" value="Galaxy S10" />
+		<parameter name="platformVersion" value="10.0" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="deviceOrientation" value="portrait" />
+		<classes>
+
+			<class name="org.quote.mobileMDATests.VeteransAutoInsurance" />
+
+		</classes>
+	</test>
+</suite>
